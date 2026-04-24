@@ -3,8 +3,8 @@
 }
 
 .bg-body-tertiary {
-    --bs-bg-opacity: 0.2;
-    /* background-color: rgba(209, 156, 11, 0.671) !important; */
+    --bs-bg-opacity: 0.1;
+    /* background-color: #323C84 !important; */
 }
 
 .btn-outline-success {
@@ -39,10 +39,11 @@
     list-style: none;
     justify-content: center;
     margin: auto;
+    gap: 30px;
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./background.jpeg) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./background.jpeg) ;
     background-size: cover;
 }
 
@@ -151,3 +152,39 @@ body {
     --bs-text-opacity: 1;
     color: rgb(255, 255, 255) !important;
 }
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #f3f3f300 !important;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+/* Add some padding inside the card container */
+.card_container {
+    padding: 2px 16px;
+} 
