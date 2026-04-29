@@ -177,6 +177,8 @@ body {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    --bs-card-color: white;
+    --bs-card-bg: #ffffff40;
 }
   
 /* On mouse-over, add a deeper shadow */
@@ -188,3 +190,17 @@ body {
 .card_container {
     padding: 2px 16px;
 } 
+
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
