@@ -9,7 +9,10 @@ function fetchData() {
     .then(response => response.json())
     .then(data => {
         const destArray = Object.entries(data);
-        console.log(destArray);
-        // mainDiv.classList.add('hidden');
+        // console.log(destArray);
+        // console.log(searchBar.value.toLowerCase());
+        const countries = destArray[0][1];
+        const cities = countries.map(country => country.cities);
+        console.log(cities);
     });
 }
