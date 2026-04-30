@@ -204,3 +204,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.form-control{
+    width: auto;
+}
