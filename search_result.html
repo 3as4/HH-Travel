@@ -32,9 +32,9 @@
               </li>
             </ul>
             <!-- <form class="d-flex" role="search"> -->
-              <input class="form-control me-2" id="searchInput" type="text" placeholder="Enter a Destination" aria-label="Search"/>
-              <button class="btn btn-outline-success" onclick="handleSearch()">Search</button>
-              <button class="btn btn-outline-success" onclick="clearResults()">Clear</button>
+              <input class="form-control me-2" id="searchBar" type="text" placeholder="Enter a Destination" aria-label="Search"/>
+              <button class="btn btn-outline-success" id="searchInput" type="submit"><a href="./">Search</a></button>
+              <button class="btn btn-outline-success" id="clearbtn" type="submit">Clear</button>
             <!-- </form> -->
           </div>
         </div>
@@ -47,25 +47,31 @@
         <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
-    <div class="container my-5" id="mainDiv"> 
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"> 
-            <div class="col-lg-12 p-3 p-lg-5 pt-lg-3"> 
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Explore Dream Destination</h1> <br>
-                <p class="lead">Maecenas rutrum tincidunt convallis. Aenean ut diam vel mauris cursus convallis. Quisque egestas lectus nec hendrerit convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tincidunt sem. Aenean lacus nibh, dictum ac consectetur quis, placerat eu justo. Pellentesque finibus lorem ut dolor sagittis, id efficitur lorem imperdiet. Pellentesque tincidunt tortor ut tempor sagittis. Curabitur semper dapibus mauris ut euismod. Donec ac aliquam nunc. Nulla vehicula nunc enim, sed viverra turpis bibendum ut. Duis sed lacinia nisi. Integer vulputate, est at congue vehicula, metus velit euismod libero, et aliquet augue risus sit amet lectus.</p> <br>
-                
-                <section id="results-section" class="results-section hidden">
-                    <h2 id="results-title">Results</h2>
-                    <div id="results-grid" class="results-grid"></div>
-                </section>
-
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> 
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Book Now</button> 
-                </div> 
-            </div> 
-        </div> 
-    </div>
-
-
+    <!-- SEARCH RESULTS -->
+    <section id="results-section" class="results-section hidden">
+      <h2 id="results-title">Results</h2>
+      <div id="results-grid" class="results-grid"></div>
+    </section>
+  
+    <!-- FEATURED CATEGORIES -->
+    <section class="categories">
+      <h2>Browse by Category</h2>
+      <div class="cat-cards">
+        <div class="cat-card" onclick="showCategory('beaches')">
+          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80" alt="Beaches"/>
+          <div class="cat-label">🏖 Beaches</div>
+        </div>
+        <div class="cat-card" onclick="showCategory('temples')">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&q=80" alt="Temples"/>
+          <div class="cat-label">🛕 Temples</div>
+        </div>
+        <div class="cat-card" onclick="showCategory('countries')">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="Countries"/>
+          <div class="cat-label">🌏 Countries</div>
+        </div>
+      </div>
+    </section>
+  
 
     <div class="container"> 
         <footer class="py-3 my-4"> 
